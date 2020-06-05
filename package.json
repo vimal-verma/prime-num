@@ -1,0 +1,21 @@
+{
+  "name": "prime-num",
+  "version": "0.0.1",
+  "description": "prime numbers",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letskhabar/prime-num.git"
+  },
+  "keywords": [
+    "prime-num",
+    "prime",
+    "math"
+  ],
+  "author": "letskhabar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/letskhabar/prime-num/issues"
+  },
+  "homepage": "https://github.com/letskhabar/prime-num#readme"
+}
