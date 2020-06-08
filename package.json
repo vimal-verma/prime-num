@@ -1,6 +1,6 @@
 {
   "name": "prime-num",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "prime numbers",
   "main": "index.js",
   "repository": {

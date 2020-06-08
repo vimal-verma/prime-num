@@ -30,4 +30,29 @@ module.exports.primelength = max =>
         }
     }
     return primes.length;
-}
+};
+
+
+module.exports.isPrime = num =>{
+    if (num == 2) {
+      return true;
+    }
+    else if(num > 2){
+      let flag = false;
+      for (var i = 2;  i < num; i++) {
+  
+        if (num % i == 0 ) {
+          return false;
+        }
+        else {
+          flag = true;
+        }
+      }
+      if(flag == true){
+          return true;
+      }
+    }
+    else {
+      return false;
+    }
+  }
