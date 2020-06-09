@@ -1,4 +1,4 @@
-module.exports.primeupto = max =>
+module.exports.primes = max =>
 {
     var store  = [], i, j, primes = [];
     for (i = 2; i <= max; ++i) 
