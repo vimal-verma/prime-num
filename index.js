@@ -56,3 +56,85 @@ module.exports.isPrime = num =>{
       return false;
     }
   }
+
+
+  module.exports.primebtw =(a , b) =>
+{
+    var min=( a>b ? b : a );
+    var max=( a>b ? a : b );
+
+
+
+    var storea  = [], i, j, primea = [];
+    for (i = 2; i <= max; ++i) 
+    {
+        if (!storea [i]) 
+          {
+            primea.push(i);
+            for (j = i << 1; j <= max; j += i) 
+            {
+                storea[j] = true;
+            }
+        }
+    }
+    
+    var storeb  = [], i, j, primeb = [];
+    for (i = 2; i <= min; ++i) 
+    {
+        if (!storeb [i]) 
+          {
+            primeb.push(i);
+            for (j = i << 1; j <= max; j += i) 
+            {
+                storeb[j] = true;
+            }
+        }
+    }
+
+    primea.splice(0, primeb.length);
+
+    
+    return primea;
+    
+};
+
+
+module.exports.primebl =(a , b) =>
+{
+    var min=( a>b ? b : a );
+    var max=( a>b ? a : b );
+
+
+
+    var storea  = [], i, j, primea = [];
+    for (i = 2; i <= max; ++i) 
+    {
+        if (!storea [i]) 
+          {
+            primea.push(i);
+            for (j = i << 1; j <= max; j += i) 
+            {
+                storea[j] = true;
+            }
+        }
+    }
+    
+    var storeb  = [], i, j, primeb = [];
+    for (i = 2; i <= min; ++i) 
+    {
+        if (!storeb [i]) 
+          {
+            primeb.push(i);
+            for (j = i << 1; j <= max; j += i) 
+            {
+                storeb[j] = true;
+            }
+        }
+    }
+
+    primea.splice(0, primeb.length);
+
+    
+    return primea.length;
+    
+};

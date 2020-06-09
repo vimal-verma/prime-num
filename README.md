@@ -12,11 +12,12 @@ prime-num is an math library for JavaScript and Node.js. It help you to find all
 
 ## Features
 
-- find all prime number upto n.
-- find all prime number from m to n.  // comming soon
-- find number of prime upto n.
-- find number of prime from m to n.
-- find a number is Prime or not.
+- find all prime number upto n. [ primes(n) ]
+- find all prime number between m to n. [ primebtw(m,n) ]
+- find number of prime upto n.  [ primelength(n) ]
+- find number of prime between m to n. [ primebl(m,n) ]
+- find a number n is Prime or not.  [ isPrime(n) ]
+
 - Can be used in command line as well.
 - Runs on any JavaScript engine.
 - Is easily extensible.
@@ -32,21 +33,16 @@ Install prime-num using [npm](https://www.npmjs.com/package/prime-num):
 
 
 ```js
-const {primeupto,primelength} = require('prime-num');
+const {primes,primelength,isPrime,primebtw,primebl} = require('prime-num');
 
-console.log(primeupto(5));     // 2,3,5
-console.log(primelength(5));   // 3
-console.log(isPrime(5));       // true
-console.log(primeupto(34));    // 2,3,5,7,11,13,17,19,23,29,31
-console.log(primelength(34));  // 11
-console.log(isPrime(34));      // false
-console.log(primeupto(25));    // 2,3,5,7,11,13,17,19,23
+console.log(primes(25));       // 2,3,5,7,11,13,17,19,23
 console.log(primelength(25));  // 9
 console.log(isPrime(25));      // false
-console.log(primeupto(53));    // 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53
+console.log(primes(53));       // 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53
 console.log(primelength(53));  // 16
 console.log(isPrime(53));      // true
-
+console.log(primebtw(53,10));  // 11,13,17,19,23,29,31,37,41,43,47,53
+console.log(primebl(53,10));   // 12
 ```
 
 ## Run
