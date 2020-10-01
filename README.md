@@ -35,7 +35,7 @@ Install prime-num using [npm](https://www.npmjs.com/package/prime-num):
 ```js
 const {primes,primelength,isPrime,primebtw,primebl} = require('prime-num');
 
-console.log(primes(25));       // 2,3,5,7,11,13,17,19,23
+console.log(primes(29));       // 2,3,5,7,11,13,17,19,23,29
 console.log(primelength(25));  // 9
 console.log(isPrime(25));      // false
 console.log(primes(53));       // 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53
